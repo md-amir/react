@@ -1,35 +1,15 @@
-import { useState } from 'react'
-import "./App.css"
+import logo from './logo.svg';
+import './App.css';
+import {useState,useEffect} from 'react'
 
-function App ()
-{
-  const [ count, setCount ] = useState( 1 );
-
-  console.log("component render  count=" + count + "");
-
-
-  const increamentCount = () =>
-  { 
-    setCount( ( previousCount ) =>
-    {
-    console.log("increment render before  count=" + previousCount + "");
-    return previousCount+1;
-    } );
-    
-    console.log("increment render after set count=" + count + "");
-  }
-
-  const decreamentCount = () =>
-  { 
-   setCount( previousCount => previousCount - 1);
-  }
+function App() {
   
+  us
+
   return (
-    <div className="App">
-      <button onClick={increamentCount}>+</button>
-      <p>{ count }</p>
-      <button onClick={decreamentCount}>-</button>
-    </div>
+    <>
+    <button onClick="">Users</button>
+    </>
   );
 }
 
