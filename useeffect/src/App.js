@@ -13,7 +13,7 @@ function App() {
     return () => {
       console.log('clear useeffect');
     }
-  },[])
+  },[resoursType])
   
 
   return (
