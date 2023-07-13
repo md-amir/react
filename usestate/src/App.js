@@ -1,41 +1,16 @@
-import { useState } from 'react';
-import "./App.css";
-import ObjectState from './components/ObjectState';
+import logo from './logo.svg';
+import './App.css';
+import { useState, useEffect } from 'react';
 
 function App ()
 {
-  const [ count, setCount ] = useState( 1 );
 
-  console.log( "component render  count=" + count + "" );
-
-
-  const increamentCount = () =>
-  {
-    setCount( ( previousCount ) =>
-    {
-      console.log( "increment render before  count=" + previousCount + "" );
-      return previousCount + 1;
-    } );
-
-    console.log( "increment render after set count=" + count + "" );
-  };
-
-  const decreamentCount = () =>
-  {
-    setCount( previousCount => previousCount - 1 );
-  };
+  us;
 
   return (
-    <div className="App">
-      <div className="count-part">
-        <button onClick={ increamentCount }>+</button>
-        <p>{ count }</p>
-        <button onClick={ decreamentCount }>-</button>
-      </div>
-      <div className="usestate-object">
-        <ObjectState />
-      </div>
-    </div>
+    <>
+      <button onClick="">Users</button>
+    </>
   );
 }
 
