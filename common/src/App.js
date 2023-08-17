@@ -1,4 +1,6 @@
+import ArtMarketPlace from "./components/ArtMarketPlace";
 import ConditionalEffect from "./components/ConditionalEffect";
+import IntervalHookCount from "./components/IntervalHookCount";
 import MouseEffect from "./components/MouseEffect";
 
 function App ()
@@ -6,7 +8,10 @@ function App ()
   return (
     <>
       {/* <ConditionalEffect /> */}
-      <MouseEffect />
+      {/* <MouseEffect /> */ }
+      {/* <IntervalHookCount /> */ }
+      <ArtMarketPlace/>
+      
     </>
   );
 }
